@@ -1,0 +1,14 @@
+version: '1.0'
+steps:
+
+  build_step:
+    type: build
+    dockerfile: Dockerfile
+    image-name: codefreshdemo/angular
+    tag: ${{CF_BRANCH}}
+
+  unit_tests:
+    image: ${{build_step}}
+    fail-fast: false
+    commands:
+      - "yarn bazel test //tools/ts-api-guardian:all --noshow_progress"
