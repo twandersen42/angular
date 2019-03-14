@@ -452,7 +452,7 @@ Each time a new alias instance is added, the new form array instance is provided
 
 #### Adding an alias
 
-Initially, the form contains one `Alias` field. To add another field, click the **Add Alias** button. You can also validate the array of aliases reported by the form model displayed by `Form Value` at the bottom of the template.
+Initially, the form contains one `Alias` field. To add another field, click the **Add Alias** label. You can also validate the array of aliases reported by the form model displayed by `Form Value` at the bottom of the template.
 
 <div class="alert is-helpful">
 
